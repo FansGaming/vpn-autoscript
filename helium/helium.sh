@@ -1,6 +1,5 @@
 #!/bin/bash
-#script by Abi Darwish
-#recode sikit by givpn
+#script by Administrator
 
 VERSIONNAME="Helium v"
 VERSIONNUMBER="3.0"
