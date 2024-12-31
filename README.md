@@ -1,6 +1,6 @@
-# Directly install without the need to register an IP VPS 
+# Instal Langsung Tanpa Perlu Mendaftarkan IP VPS
 
-# Order from me (MUST READ) before using
+# Baca Dahulu Sebelum Install
 
 </p> 
 <h2 align="center"> Supported Linux Distribution</h2>
