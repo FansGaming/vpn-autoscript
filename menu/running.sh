@@ -195,7 +195,7 @@ kernelku=$(uname -r)
 
 # DNS PATCH
 #tipeos2=$(uname -m)
-Name=$"givpn"
+Name=$"Administrator"
 Exp=$"Lifetime"
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
@@ -213,7 +213,7 @@ echo -e "\e[1;34m              SUBSCRIPTION INFORMATION            \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m Client Name \e[0m: $Name"
 echo -e "\e[1;32m Exp Script  \e[0m: $Exp"
-echo -e "\e[1;32m Version     \e[0m: 1.0"
+echo -e "\e[1;32m Version     \e[0m: 2.0"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;34m                SERVICE INFORMATION               \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
