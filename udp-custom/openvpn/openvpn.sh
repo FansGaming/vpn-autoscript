@@ -1,9 +1,9 @@
 #!/bin/bash
 # =========================================
 # Quick Setup | Script Setup Manager
-# Edition : Stable Edition 1.0
-# Auther  : givpn
-# (C) Copyright 2023
+# Edition : Edition 2.0 beta
+# Auther  : Administrator
+# (C) Copyright 2024
 # =========================================
 # pewarna hidup
 BGreen='\e[1;32m'
@@ -20,13 +20,13 @@ apt -y install squid3
 sleep 1
 echo "\e[1;32m Proses Download squid.. \e[0m"
 apt -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/openvpn/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/udp-custom/openvpn/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # // OpenVPN
 sleep 1
 echo "\e[1;32m Proses Download OpenVPN.. \e[0m"
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/openvpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/udp-custom/openvpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 cd
 chown -R www-data:www-data /home/vps/public_html
@@ -94,7 +94,7 @@ echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
 echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
 echo ""
 echo "=============================Contact==============================" | tee -a log-install.txt
-echo "---------------------------t.me/givpn-----------------------------" | tee -a log-install.txt
+echo "--------------------------Administrator---------------------------" | tee -a log-install.txt
 echo "==================================================================" | tee -a log-install.txt
 echo -e ""
 echo ""
