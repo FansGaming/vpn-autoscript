@@ -1,9 +1,9 @@
 #!/bin/bash
 # =========================================
 # Quick Setup | Script Setup Manager
-# Edition : Stable Edition 1.0
-# Auther  : givpn
-# (C) Copyright 2023
+# Edition : Edition 2.0 beta
+# Auther  : Administrator
+# (C) Copyright 2024
 # =========================================
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
@@ -18,7 +18,7 @@ apt install openvpn easy-rsa unzip -y
 apt install openssl iptables iptables-persistent -y
 mkdir -p /etc/openvpn/server/easy-rsa/
 cd /etc/openvpn/
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/openvpn/vpn.zip
+wget https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/udp-custom/openvpn/vpn.zip
 unzip vpn.zip
 rm -f vpn.zip
 chown -R root:root /etc/openvpn/server/easy-rsa/
