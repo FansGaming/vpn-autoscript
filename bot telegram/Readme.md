@@ -4,5 +4,5 @@
 - Id Telegram : Found on [userinfobot](https://t.me/userinfobot)
 - Subdomain   : Your Subdomain use on IP VPS
 ```
-https://raw.githubusercontent.com/FansGaming/vpn-autoscript/refs/heads/main/bot%20telegram/xolpanel.sh?token=GHSAT0AAAAAAC4GHELZEFT3RSQGMSURFLV4Z3T2K6A
+https://raw.githubusercontent.com/FansGaming/vpn-autoscript/refs/heads/main/bot%20telegram/xolpanel.sh
 ```
