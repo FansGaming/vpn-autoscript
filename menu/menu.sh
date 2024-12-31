@@ -55,7 +55,7 @@ umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($
 tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
 # user
 Exp2=$"Lifetime"
-Name=$"givpn"
+Name=$"Administrator"
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
@@ -81,9 +81,7 @@ echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m OS            \e[0m: "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[1;32m Uptime        \e[0m: $uptime"
 echo -e "\e[1;32m Public IP     \e[0m: $IPVPS"
-LOC=$(curl -s http://ip-api.com/json/ | jq -r '.country')
-echo -e "\e[1;32mCountry        \e[0m: $LOC"
-#echo -e "\e[1;32m ASN           \e[0m: $ISP"
+echo -e "\e[1;32m ASN           \e[0m: $ISP"
 #echo -e "\e[1;32m CITY          \e[0m: $CITY"
 echo -e "\e[1;32m DOMAIN        \e[0m: $domain"	
 echo -e "\e[1;32m DATE & TIME   \e[0m: $DATE2"
@@ -114,7 +112,7 @@ echo -e "\e[1;32m Client Name \e[0m: $Name"
 echo -e "\e[1;32m Expired     \e[0m: $Exp2"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e   ""
-echo -e "\e[1;36m -------------------------------------------------\e[0m"
+echo -e "\e[1;36m -----------------Administrator-------------------\e[0m"
 echo -e   ""
 read -p " Select menu :  "  opt
 echo -e   ""
