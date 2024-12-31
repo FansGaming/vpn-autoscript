@@ -1,9 +1,9 @@
 #!/bin/bash
 # =========================================
 # Quick Setup | Script Setup Manager
-# Edition : Stable Edition 1.0
-# Auther  : givpn
-# (C) Copyright 2023
+# Edition : Edition 2.0 beta
+# Auther  : Administrator
+# (C) Copyright 2024
 # =========================================
 clear
 echo Installing Websocket-SSH Python
@@ -13,13 +13,13 @@ sleep 2
 cd
 
 # // GIT USER
-GitUser="givpn"
+GitUser="FansGaming"
 
 # // SYSTEM WEBSOCKET HTTPS 443
 cat <<EOF> /etc/systemd/system/ws-https.service
 [Unit]
 Description=Python Proxy
-Documentation=https://github.com/givpn/
+Documentation=https://github.com/FansGaming/
 After=network.target nss-lookup.target
 
 [Service]
@@ -75,13 +75,13 @@ WantedBy=multi-user.target
 EOF
 
 # // PYTHON WEBSOCKET TLS && NONE
-wget -q -O /usr/local/bin/ws-https https://raw.githubusercontent.com/${GitUser}/AutoScriptXray/master/websocket/ws-https; chmod +x /usr/local/bin/ws-https
+wget -q -O /usr/local/bin/ws-https https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/websocket/ws-https; chmod +x /usr/local/bin/ws-https
 
 # // PYTHON WEBSOCKET DROPBEAR
-wget -q -O /usr/local/bin/ws-http https://raw.githubusercontent.com/${GitUser}/AutoScriptXray/master/websocket/ws-http; chmod +x /usr/local/bin/ws-http
+wget -q -O /usr/local/bin/ws-http https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/websocket/ws-http; chmod +x /usr/local/bin/ws-http
 
 # // PYTHON WEBSOCKET OVPN
-wget -q -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/${GitUser}/AutoScriptXray/master/websocket/ws-ovpn; chmod +x /usr/local/bin/ws-ovpn
+wget -q -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/websocket/ws-ovpn; chmod +x /usr/local/bin/ws-ovpn
 
 # // RESTART && ENABLE SSHVPN WEBSOCKET TLS 
 systemctl daemon-reload
