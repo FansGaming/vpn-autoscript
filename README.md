@@ -13,18 +13,18 @@
 <p <p align="center"><img src="https://img.shields.io/badge/Service-Webmin-success.svg"> <img src="https://img.shields.io/badge/Service-Helium-success.svg">
 <p <p align="center"><img src="https://wangchujiang.com/sb/status/stable.svg">
   
-# Required VPS is still fresh (MUST) / have never installed anything
+# VPS yang diperlukan harus masih baru (WAJIB) / belum pernah menginstal apa pun.
 <br>
-- If you install the Script twice, you need to rebuild the VPS to factory settings, in the VPS provider panel<br>
-- DOMAIN (MUST) / Random<br>
+- Jika Anda menginstal script dua kali, Anda harus mereset VPS ke pengaturan pabrik di panel penyedia VPS.<br>
+- DOMAIN: Wajib, dapat menggunakan domain acak.<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
 - RAM 1GB<br>
-- (Recommendation) Ubuntu 18 / 20 LTS (STABLE to use)
+- (Rekomendasi: Gunakan Ubuntu 18/20 LTS untuk stabilitas yang lebih baik.)
 <br>
 
-# Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) to display other settings
+# Pengaturan Cloudflare untuk yang memiliki Domain Sendiri
 <br>
 - SSL/TLS : FULL<br>
 - SSL/TLS Recommender : OFF<br>
@@ -33,9 +33,6 @@
 - Always Use HTTPS : OFF<br>
 - UNDER ATTACK MODE : OFF<br>
 <br>
-
-# Pointing
-![Pointing](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/pointing.png)
 
 ## Service & Port:
 <br>
@@ -60,65 +57,53 @@
 - Shadowsocks gRPC         : 443<br>
 <br>
   
-## Feature
-- Speedtest® by [Ookla®](https://speedtest.net)
-- Set Auto Reboot
-- Restart All Service
-- AUTO delete user Expired 
-- Check Bandwith
-- BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0) What is BBR [Search now BBR](https://www.google.com/search?q=what+bbr+in+linux)
-- DNS CHANGER
-- no auto backup? which... is permanently removed
-- Just accept the existing features / you can add them yourself manually
-- Additional Features (Optional) skipper (NOTE) install after [Step Install] is complete
-- Optional [install OpenVPN + Slowdns +](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
-- Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
-- Optional [install Bot Telegram Xolpanel](https://github.com/givpn/AutoScriptXray/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
-  
-# Menu
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
 
-# Service Status
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
+# Fitur
+- Speedtest oleh Ookla
+- Pengaturan Reboot Otomatis
+- Restart Semua Layanan
+- Penghapusan Akun yang Kadaluarsa Secara Otomatis
+- Pemeriksaan Bandwidth
+- BBRPLUS versi 1.4.0 oleh Chikage0o0
+- Pengubah DNS
+- Tidak ada fitur backup otomatis
+- Fitur tambahan dapat ditambahkan secara manual
+- Fitur Tambahan (Opsional)
+- OpenVPN + SlowDNS + UDP-Custom oleh Exe302
+- Panel Webmin + Blokir Iklan (Helium versi 3.0) oleh Abi Darwish
+- Bot Telegram Xolpanel oleh XolvaID
+- Catatan: Fitur tambahan diinstal setelah proses instalasi selesai.
 
-# [Step Install]
-- Step 1 for (debian) please update first
+# [Installasi]
+- Step 1 Update Vps
 ```
 apt update && apt upgrade -y && reboot
 ```
-- Step 2 for (ubuntu) directly install
+- Step 2 Install
 ```
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
+```
+# Step 3 usage
+```
+menu
 ```
 
-# Telegram
-[![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
-[![Telegram-grup](https://img.shields.io/badge/Grup-Telegram-blue)](https://t.me/givpn_grup/)
-
-# Donate
-[![PayPal donate button](https://img.shields.io/badge/Donate-PayPal-yellow)](https://paypal.me/givpn11)
-[![QRIS donate button](https://img.shields.io/badge/Donate-QRIS-red)](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/qris-givpn.jpg)
-[![Bitcoin donate button](https://img.shields.io/badge/Donate-Bitcoin-orange)](https://www.blockchain.com/explorer/addresses/btc/3BE1deCJcuykuTHMzmrmNYgN51E24Hix8i)
-[![Ethereum donate button](https://img.shields.io/badge/Donate-Ethereum-blue)](https://www.blockchain.com/explorer/addresses/eth/0x3eb09df9a72e8e333e202116ff3eb348b3ebf554)
-# List Donate
-[![donate button](https://img.shields.io/badge/List-Donate-green)](https://github.com/givpn/donate)
 
 <!-- <a href="https://www.digitalocean.com/?refcode=8a474003bf18&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a> -->
 
-# ATTENTION (MUST READ) CAREFULLY
-- PROHIBITED FOR SALE BECAUSE I GET FREE FROM THE INTERNET
-- DATA SECURITY / YOUR USE HISTORY ON THE INTERNET IS NOT MY RESPONSIBILITY AS A SCRIPT PROVIDER
-- ALL YOUR DATA / USAGE HISTORY ON THE INTERNET ONLY VPS NETWORK PROVIDERS MANAGE IT AND (FBI) maybe
-- USE IT WISELY THEN YOU WILL AVOID PROBLEMS
-- WATCHING ADULT FILM IS YOUR OWN RESPONSIBILITY
+# PERHATIAN (HARUS DIBACA) DENGAN SAKSAMA
+- DILARANG UNTUK DIJUAL KARENA SAYA MENDAPATKANNYA SECARA GRATIS DARI INTERNET.
+- KEAMANAN DATA/PENGUNAAAN INTERNET ANDA BUKAN TANGGUNG JAWAB SAYA SEBAGAI PENYEDIA SCRIPT.
+- SEMUA DATA/PENGUNAAAN INTERNET ANDA HANYA DIKONTROL OLEH PENYEDIA JARINGAN VPS DAN MUNGKIN PIHAK BERWENANG (FBI).
+- GUNAKAN DENGAN BIJAK UNTUK MENGHINDARI MASALAH.
+- MENONTON FILM DEWASA ADALAH TANGGUNG JAWAB ANDA SENDIRI.
 
-# FINAL MESSAGE
-- THANK YOU FOR TAKING THE TIME TO READ AND SORRY IF THERE ARE IMPACT WORDS
-- BECAUSE I AM ALSO A HUMAN WHO DOESN'T ESCAPE FROM MISTAKES
+# PESAN AKHIR
+- TERIMA KASIH ATAS PERHATIAN DAN KESABARAN ANDA MEMBACA.
+- MOHON MAAF JIKA ADA KATA-KATA YANG KURANG TEPAT, KARENA SAYA JUGA MANUSIA YANG TIDAK SEMPURNA.
 
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"> <img src="https://img.shields.io/badge/License-MIT-yellow.svg" style="max-width:200%;">
-<p align="center">
-  <a><img src="https://img.shields.io/badge/givpn-AutoScriptXray%202023-blue" style="max-width:200%;">
+
 
   
