@@ -1,9 +1,8 @@
 #!/bin/bash
 # Quick Setup | Script Setup Manager
-# Edition : Stable Edition 1.0
-# Auther  : givpn
-# Kuota Habisss
-# (C) Copyright 2023
+# Edition : Edition 2.0 beta
+# Auther  : Administrator
+# (C) Copyright 2024
 # =========================================
 # pewarna hidup
 BGreen='\e[1;32m'
