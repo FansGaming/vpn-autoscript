@@ -1,4 +1,3 @@
-# by givpn
 # ipinfo
 MYIP=$(wget -qO- ifconfig.me);
 # pewarna hidup
@@ -8,7 +7,7 @@ BYellow='\e[1;33m'
 BBlue='\e[1;34m'
 BPurple='\e[1;35m'
 NC='\e[0m'
-wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/givpn/AutoScriptXray/master/sshd_config;
+wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/sshd_config;
 systemctl restart sshd;
 clear;
 read -p "Enter Password : " pass
