@@ -1,5 +1,11 @@
 #!/bin/bash
-MYIP=$(curl -sS ifconfig.me)
+# Quick Setup | Script Setup Manager
+# Edition : Stable Edition 1.0
+# Author  : givps
+# The MIT License (MIT)
+# (C) Copyright 2023
+# =========================================
+MYIP=$(curl -sS ipv4.icanhazip.com)
 echo "Checking VPS"
 clear
 # Color Validation
@@ -55,17 +61,19 @@ umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($
 tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
 # user
 Exp2=$"Lifetime"
-Name=$"Administrator"
+Name=$"VIP-MEMBERS"
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 cpu_usage+=" %"
-ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d | cut -d " " -f 2-10 )
+ISP=$(curl -s https://ipapi.co/org | cut -d " " -f 2-10 )
+CITY=$(curl -s https://ipinfo.io/city )
+#WKT=$(curl -s ipinfo.io/timezone?token=ce3da57536810d )
 DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 DATE2=$(date -R | cut -d " " -f -5)
-IPVPS=$(curl -s ifconfig.me )
-LOC=$(curl -s ifconfig.co/country )
+IPVPS=$(curl -s ipv4.icanhazip.com )
+LOC=$(curl -s https://ipapi.co/country_code )
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
@@ -79,8 +87,10 @@ echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m OS            \e[0m: "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[1;32m Uptime        \e[0m: $uptime"
 echo -e "\e[1;32m Public IP     \e[0m: $IPVPS"
+echo -e "\e[1;32m CITY          \e[0m: $CITY"
+echo -e "\e[1;32m Country       \e[0m: $LOC"
 echo -e "\e[1;32m ASN           \e[0m: $ISP"
-echo -e "\e[1;32m DOMAIN        \e[0m: $domain"	
+echo -e "\e[1;32m DOMAIN        \e[0m: $domain"
 echo -e "\e[1;32m DATE & TIME   \e[0m: $DATE2"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;34m                      RAM INFO                    \e[0m"
@@ -102,14 +112,14 @@ echo -e "\e[1;36m 6 \e[0m: Menu Setting"
 echo -e "\e[1;36m 7 \e[0m: Status Service"
 echo -e "\e[1;36m 8 \e[0m: Clear RAM Cache"
 echo -e "\e[1;36m 9 \e[0m: Reboot VPS"
-echo -e "\e[1;36m x \e[0m: Exit Script"
+echo -e "\e[1;36m x \e[0m: Exit Script and to start again use: menu"
 echo -e   ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m Client Name \e[0m: $Name"
 echo -e "\e[1;32m Expired     \e[0m: $Exp2"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e   ""
-echo -e "\e[1;36m -----------------Administrator-------------------\e[0m"
+echo -e "\e[1;36m --------------------t.me/givpn_grup-------------------\e[0m"
 echo -e   ""
 read -p " Select menu :  "  opt
 echo -e   ""
@@ -124,6 +134,5 @@ case $opt in
 8) clear ; clearcache ;;
 9) clear ; reboot ; /sbin/reboot ;;
 x) exit ;;
-*) echo "Anda salah tekan " ; sleep 1 ; menu ;;
+*) echo "You pressed it wrong " ; sleep 1 ; menu ;;
 esac
-
