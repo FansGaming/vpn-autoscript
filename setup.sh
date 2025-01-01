@@ -1,5 +1,7 @@
 #!/bin/bash
-
+# cari apa..?? harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
+# jangan lupa sholat ingat ajal menantimu
+# dibawah ini bukan cd kaset ya
 cd
 rm -rf setup.sh
 clear
@@ -254,4 +256,3 @@ echo " Auto reboot in 10 Seconds "
 sleep 10
 rm -rf setup.sh
 reboot
-
