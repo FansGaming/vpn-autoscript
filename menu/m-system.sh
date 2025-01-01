@@ -32,5 +32,5 @@ case $opt in
 7) clear ; m-dns ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; m-system ;;
+*) echo "Anda salah tekan" ; sleep 1 ; m-system ;;
 esac
