@@ -4,6 +4,7 @@
 # Auther  : Administrator
 # (C) Copyright 2024
 # =========================================
+
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
@@ -19,7 +20,7 @@ echo -e " [\e[36m•5\e[0m] Cek Bandwith"
 echo -e " [\e[36m•6\e[0m] Install TCP BBR"
 echo -e " [\e[36m•7\e[0m] DNS CHANGER"
 echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBack To Menu\033[0m"
+echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e   ""
 echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo -e   ""
@@ -37,5 +38,5 @@ case $opt in
 7) clear ; m-dns ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo "You pressed it wrong" ; sleep 1 ; m-system ;;
+*) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; m-system ;;
 esac
