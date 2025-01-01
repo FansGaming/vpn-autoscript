@@ -66,8 +66,8 @@ Name=$"Administrator"
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 cpu_usage+=" %"
-#ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d | cut -d " " -f 2-10 )
-#CITY=$(curl -s ipinfo.io/city?token=ce3da57536810d )
+ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city?token=ce3da57536810d )
 #WKT=$(curl -s ipinfo.io/timezone?token=ce3da57536810d )
 DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
