@@ -345,7 +345,7 @@ wget -O user-lock "https://raw.githubusercontent.com/FansGaming/vpn-autoscript/m
 wget -O user-unlock "https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/ssh/user-unlock.sh"
 
 # menu system
-wget -O m-system "https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/m-system.sh"
+wget -O m-system "https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/menu/m-system.sh"
 wget -O m-domain "https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/menu/m-domain.sh"
 wget -O add-host "https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/ssh/add-host.sh"
 wget -O certv2ray "https://raw.githubusercontent.com/FansGaming/vpn-autoscript/main/xray/certv2ray.sh"
